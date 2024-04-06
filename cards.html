@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(../backgrounds/forest-aerial-view-nature-scenery-hd-wallpaper-uhdpaper.com-816@0@g.jpg) ;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        h1{
+            color: rgb(56, 227, 56);
+            font-weight: bold;
+            font-size: 2.1pc;
+            
+        }
+        nav{
+            margin: 2%;
+            backdrop-filter:blur(1px);
+            /* font-size: 20px; */
+            padding: 0%;    
+        }
+        nav a{
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            padding: 4px;
+            position: relative;
+
+        }
+        nav a::after{
+            content: " ";
+            left: 0;
+            background-color: #000000;
+            width: 0%;
+            
+            height: 3px;
+            bottom: 0;
+            transition: 0.6s ease-in;
+            position: absolute;
+        }
+        nav a:hover::after{
+            width: 100%;
+            transition: 0.6s ease-in;
+            background-color: rgb(56, 227, 56);
+            border-radius: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+            
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+        }
+       #form{
+        /* border: solid; */
+        max-width: 100vh;
+        padding: 50px;
+        font-size: 1pc;
+        color: white;
+       }
+       .main{
+        color: white;
+        font-size: 2pc;
+       }
+       form{
+        /* border: solid; */
+        max-width: 70vh;
+        padding: 10px;
+       }
+       button{        
+        height: 30px;
+        width: 100%;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(56, 227, 56);
+        color: white;
+        letter-spacing: 2px;
+        font-weight: bold;
+        transition: 0.3s ease-in;
+        height: 40px;
+       }
+       button:hover{
+        transition: 0.5s ease-in;
+        cursor: pointer;
+        box-shadow: 1px -1px 8px -3px;
+
+        background-color: rgb(51, 192, 51);
+       }
+       input{
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 1px -1px 8px -3px;
+
+        height: 40px;
+       }
+       .text-form{
+        font-size: 30px;
+        font-weight: lighter;
+       }
+       input::placeholder{
+        color: black;
+        padding: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+    <nav>
+        <ul>
+        <h1>NatureX</h1>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Port</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+    <section>
+        <div class="main">
+            <!-- Nature -->
+        </div>
+    </section>
+    <section id="form">
+        <div class="text-form">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nemo eos dicta necessitatibus.
+        </div>
+        <form>
+            <input type="text" name="" id="" placeholder="Mensagem">
+            <br><br>
+            <input type="email" name="" id="" placeholder="E-mail">
+            <br><br>
+            <button>ENVIAR</button>
+        </form>
+    </section>
+</body>
+</html>
