@@ -1,148 +1,145 @@
 <!doctype html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature</title>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gui Sousa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
+        @font-face {
+            font-family: zt;
+            src: url(fonts/ZTGatha-SemiBold.ttf);
+        }
         *{
+            font-family: zt;
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
         body{
-            background: url(forest-aerial-view-nature-scenery-hd-wallpaper-uhdpaper.com-816@0@g.jpg) ;
-            background-attachment: fixed;
-            background-size: cover;
-            background-repeat: no-repeat;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            
-        }
-        h1{
-            color: rgb(56, 227, 56);
-            font-weight: bold;
-            font-size: 2.1pc;
-            
+            background-color: rgb(59, 56, 75);
         }
         nav{
-            margin: 2%;
-            backdrop-filter:blur(1px);
-            /* font-size: 20px; */
-            padding: 0%;    
-        }
-        nav a{
-            font-size: 18px;
-            color: white;
-            text-decoration: none;
-            padding: 4px;
-            position: relative;
-
-        }
-        nav a::after{
-            content: " ";
-            left: 0;
-            background-color: #000000;
-            width: 0%;
-            
-            height: 3px;
-            bottom: 0;
-            transition: 0.6s ease-in;
-            position: absolute;
-        }
-        nav a:hover::after{
-            width: 100%;
-            transition: 0.6s ease-in;
-            background-color: rgb(56, 227, 56);
-            border-radius: 10px;
-        }
-        nav ul{
-            list-style-type: none;
-            
             align-items: center;
-            display: flex;
-            justify-content: space-around;
         }
-       #form{
-        /* border: solid; */
-        max-width: 100vh;
-        padding: 50px;
-        font-size: 1pc;
-        color: white;
-       }
-       .main{
-        color: white;
-        font-size: 2pc;
-       }
-       form{
-        /* border: solid; */
-        max-width: 70vh;
-        padding: 10px;
-       }
-       button{        
-        height: 30px;
-        width: 100%;
-        border-radius: 50px;
-        border: none;
-        background-color: rgb(56, 227, 56);
-        color: white;
-        letter-spacing: 2px;
-        font-weight: bold;
-        transition: 0.3s ease-in;
-        height: 40px;
-       }
-       button:hover{
-        transition: 0.5s ease-in;
-        cursor: pointer;
-        box-shadow: 1px -1px 8px -3px;
+        .nav-bar{
+            background-image: linear-gradient(to bottom, #31303f 0%, #31303f 100%);
+        }
+        .nav{
+            padding: 10px;
+        }
+        .nav-link{
+            color: rgb(255, 255, 255);
+        }
+        .nav-link:hover{
+            color: rgb(134, 134, 154);
+        }
+        .h1-meio{
+            color: white;
+            display: flex;
+            font-size: 4pc;
+            padding-top: 150px;
+            justify-content: center;
+        }
+        #sobre{
+            padding: 10px;
+            margin-top: 250px;
+            background-image: linear-gradient(to bottom, #31303f 0%, #31303f 100%);
 
-        background-color: rgb(51, 192, 51);
-       }
-       input{
-        width: 100%;
-        border: none;
-        border-radius: 50px;
-        box-shadow: 1px -1px 8px -3px;
+        }
+        .h2-sobre{
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        .p-sobre{
+            padding-left: calc(50% - 470px); 
+            padding-right: calc(50% - 470px);
+            margin: 30px auto; 
+            text-align: center;
+            color: white;
+        }
+        .p-meio{
+            justify-content: center;
+            display: flex;
+            margin: 10px;
+            color: rgb(236, 236, 236);
+        }
+        .accordion-{
+        }
+        #projetos{
+            margin-top: 10px;
+        }
+        .card{
+          background-color: transparent;
+          border: solid 2px white;
+          color: white;
+          display: grid;
+          grid-template-columns: 280px;
 
-        height: 40px;
-       }
-       .text-form{
-        font-size: 30px;
-        font-weight: lighter;
-       }
-       input::placeholder{
-        color: black;
-        padding: 10px;
-       }
+        }
+        .card .text{margin: auto 30px;
+          text-align: center;
+          
+        }
     </style>
-</head>
-<body>
-    <div class="fixed">
-    <nav>
-        <ul>
-        <h1>NatureX</h1>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Port</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
+  </head>
+  <body>
+<nav class="nav-bar" >
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projetos">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#links">Links</a>
+        </li>
+     </ul>
+</nav>
+<!-- <div class="container"> -->
+    <section id="home">
+<div class="title-meio">
+    <h1 class="h1-meio">
+        Seja bem-vindo!
+    </h1>
+    <div class="p-meio">
+        <p class="text-meio-p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, officia.
+        </p>
     </div>
-    <section>
-        <div class="main">
-            <!-- Nature -->
+</div>
+</section>
+
+    <section id="sobre">
+        <div class="sobre-tudo">
+        <h2 class="h2-sobre">
+            Sobre
+        </h2>
+        <div class="p-sobre">
+            <p class="text-sobre-p">
+                Olá! Sou um apaixonado por tecnologia e jogos, mergulhando de cabeça na criação de experiências digitais envolventes. Com habilidades tanto no desenvolvimento front-end quanto back-end, adoro transformar ideias em realidade, criando interfaces intuitivas e sistemas funcionais.
+                <br><br>
+                Além disso, sou um entusiasta de comunidades online, desenvolvendo bots para Discord e facilitando interações entre pessoas. Atualmente, estou me dedicando aos estudos em análise e desenvolvimento de sistemas, buscando constantemente aprender e evoluir na minha jornada profissional.
+                <br><br>
+                Para mim, cada linha de código é uma oportunidade de inovação e aprendizado, e estou animado para explorar novos desafios e contribuir para o mundo da tecnologia de forma significativa.            </p>
         </div>
+    </div>
     </section>
-    <section id="form">
-        <div class="text-form">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nemo eos dicta necessitatibus.
-        </div>
-        <form>
-            <input type="text" name="" id="" placeholder="Mensagem">
-            <br><br>
-            <input type="email" name="" id="" placeholder="E-mail">
-            <br><br>
-            <button>ENVIAR</button>
-        </form>
-    </section>
-</body>
+    <!-- projetos -----------  -->
+    <section id="projetos">
+        <h2 class="h2-sobre pj">
+            Projetos
+        </h2>
+        
+      </section> 
+
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
